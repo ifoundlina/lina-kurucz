@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/**
+ * HTML5 display-role reset for older browsers
+ */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/**
+ * End of Reset
+ */
+/**
+ * Start of Custom Styles
+ */
+body {
+    /*background-color: LightGray;*/
+font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  height:100%;
+  width:100%;
+}
+p {
+line-height: 150%;
+
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #383838;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000066;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
+}
+
+/**
+ * Navigation Section
+ */
+.top-navigation {
+    background-color: #000000;
+    font-weight: 600;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.top-navigation > .content {
+    height: 4rem;
+}
+.top-navigation .links {
+    height: 2.5rem;
+    margin-top: 1.2rem;
+}
+.top-navigation .links {
+    float: right;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-top: 1.7rem;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+.top-navigation .links li.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #FF9900;
+}
+
+/**
+ * Introduction Section
+ */
+.introduction {
+    background-image: url('../images/background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    overflow: auto;
+}
+.introduction h1,
+.introduction h3 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px #202020;
+
+}
+.introduction h1 {
+    font-size: 3.5rem;
+    margin-top: 18rem;
+    font-weight: 700;
+}
+.introduction h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    font-weight: 700;
+}
+/**
+ * About Section
+ */
+
+ .about {
+  height: 18rem;
+
+ }
+
+.header {
+text-align: center;
+padding-top: 4rem;
+padding-bottom: 4rem;
+width: 100%;
+}
+
+.container {
+width: 960px;
+margin: auto;
+}
+
+.left {
+width: 460px;
+float: left;
+}
+
+.right {
+ width: 460px;
+ float: left;
+ padding-left: 3rem;
+}
+
+
+.clear {
+    clear:both;
+}
+
+/**
+ * Projects Section
+ */
+
+.portfolio {
+height: 38rem;
+
+} 
+
+ .projects {
+width: 960px;
+margin: auto;
+text-align: center;
+}
+
+.devices > li {
+    width: 33.3333333%;
+    float:left;
+}
+
+.caption {
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+/**
+ * Footer Section
+ */
+
+ .footer-content {
+height: 15rem;
+
+ }
+.social > li {
+    display: inline-block;
+     color: #FFFFFF;
+     line-height: 5rem;
+}
+
+.footer  {
+ text-align: center;
+  padding-top: 3rem;
+ padding-bottom: 3rem;
+ background-color: #000000;
+ width: 100%;
+ color: #FFFFFF;
+ line-height: 5rem;
+
+}
+
+.search:active:before, .clear:active:before {
+    color: white;
+}
+
+
+/**
+ * Responsive Design
+ */
+@media (min-width: 48rem) {
+    .content
+
+     {
+        width: 46rem;
+    }
+}
+@media (min-width: 62rem) {
+    .content {
+        width: 60rem;
+    }
+}
+@media (min-width: 75rem) {
+    .content {
+        width: 60%;
+    }
+}
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
+/* Standard syntax */ 
+@keyframes bounce {
+    0%, 100% {margin-top: 0px;}
+    50% {margin-top: 2rem;}
+}
